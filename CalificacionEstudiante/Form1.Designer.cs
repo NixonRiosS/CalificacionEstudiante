@@ -40,6 +40,7 @@
             this.btn_calcular = new System.Windows.Forms.Button();
             this.lbl_promedio = new System.Windows.Forms.Label();
             this.lbl_resultado = new System.Windows.Forms.Label();
+            this.btn_borrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -162,12 +163,24 @@
             this.lbl_resultado.Text = "Resultado";
             this.lbl_resultado.Visible = false;
             // 
+            // btn_borrar
+            // 
+            this.btn_borrar.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_borrar.Location = new System.Drawing.Point(557, 131);
+            this.btn_borrar.Name = "btn_borrar";
+            this.btn_borrar.Size = new System.Drawing.Size(113, 55);
+            this.btn_borrar.TabIndex = 12;
+            this.btn_borrar.Text = "Limpiar";
+            this.btn_borrar.UseVisualStyleBackColor = true;
+            this.btn_borrar.Click += new System.EventHandler(this.btn_borrar_Click);
+            // 
             // btn_limpiar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_borrar);
             this.Controls.Add(this.lbl_resultado);
             this.Controls.Add(this.lbl_promedio);
             this.Controls.Add(this.btn_calcular);
@@ -201,6 +214,7 @@
         private System.Windows.Forms.Button btn_calcular;
         private System.Windows.Forms.Label lbl_promedio;
         private System.Windows.Forms.Label lbl_resultado;
+        private System.Windows.Forms.Button btn_borrar;
     }
 }
 
